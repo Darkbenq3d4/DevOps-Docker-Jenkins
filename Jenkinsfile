@@ -28,5 +28,11 @@ pipeline {
                 sh './jenkins/scripts/kill.sh'
             }
         }
+        stage('Commit and Push'){
+            steps{
+                sh'git commit -m "TestJenkinsfile"'
+                sh'git push'
+            }
+        }
     }
 }
