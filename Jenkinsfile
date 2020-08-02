@@ -10,7 +10,7 @@ environment {
   CI = 'true'
 }
 stages {
-   stage('Build') {
+  stage('Build') {
       steps {
          sh 'npm install'
       }
@@ -18,5 +18,5 @@ stages {
       steps {
           sh './jenkins/scripts/test.sh'
       }
-    }
+}
 }
