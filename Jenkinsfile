@@ -24,6 +24,11 @@ pipeline {
                 sh './jenkins/scripts/kill.sh'
             }
         }
+      stage('Push'){
+        steps{
+          sh'docker push darosario3d4/devops-final-jenkins:node:14-alpine'
+        }
+      }
  
         
     }
